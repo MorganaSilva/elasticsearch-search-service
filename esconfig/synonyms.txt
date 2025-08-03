@@ -1,0 +1,3 @@
+smartphone, celular
+musica, música, som
+evento, show, festival

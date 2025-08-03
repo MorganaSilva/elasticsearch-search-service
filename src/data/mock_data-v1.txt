@@ -1,0 +1,26 @@
+[
+  {
+    "id": "p1",
+    "type": "product",
+    "title": "Smartphone Galaxy Z",
+    "description": "Um celular dobrável moderno com Android",
+    "popularity_score": 1200,
+    "updated_at": "2025-07-25T14:00:00Z"
+  },
+  {
+    "id": "e1",
+    "type": "event",
+    "title": "Rock in Rio 2025",
+    "description": "O maior festival de música do Brasil",
+    "popularity_score": 8000,
+    "updated_at": "2025-07-30T14:00:00Z"
+  },
+  {
+    "id": "a1",
+    "type": "article",
+    "title": "Guia de viagens para Lisboa",
+    "description": "Descubra os pontos turísticos de Lisboa",
+    "popularity_score": 350,
+    "updated_at": "2025-07-20T14:00:00Z"
+  }
+]

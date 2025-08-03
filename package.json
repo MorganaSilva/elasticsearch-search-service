@@ -1,0 +1,25 @@
+{
+  "name": "elasticsearch-search-service",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only --exit-child src/server.ts",
+    "seed": "ts-node src/data/seed.ts",
+    "metrics": "ts-node src/metrics/metrics.ts",
+    "test:connection": "ts-node src/config/test-connection.ts"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.13.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.1.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "baseUrl": "./src", 
+    "moduleResolution": "Node",
+    "paths": {
+      "@/*": ["./*"]    //habilita aliases como "@/api/search"
+    }, 
+    "target": "ES2020",
+    "esModuleInterop": true, 
+    "outDir": "dist",
+    "rootDir": ".",
+    "strict": true,
+    "skipLibCheck": false
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
