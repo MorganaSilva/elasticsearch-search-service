@@ -5,7 +5,6 @@
 ```bash
 git clone 
 cd elasticsearch-search-service
-cp .env.example .env
 docker-compose up -d
 yarn install
 yarn run seed
