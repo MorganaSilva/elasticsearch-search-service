@@ -14,20 +14,6 @@ console.log(`Total de buscas: ${total}`);
 console.log(`CTR Geral: ${ctr.toFixed(2)}%`);
 console.log(`CTR@1: ${ctr1.toFixed(2)}%`);*/
 
-/*import { getMetricsData } from './metrics-json';
-
-function printMetrics() {
-  const metrics = getMetricsData();
-
-  console.log('Métricas da Busca');
-  console.log('---------------------');
-  console.log(`Total de buscas: ${metrics.total}`);
-  console.log(`CTR Geral: ${metrics.ctr.toFixed(2)}%`);
-  console.log(`CTR@1: ${metrics.ctr1.toFixed(2)}%`);
-}
-
-printMetrics();*/
-
 import { getMetricsData } from './metrics-json';
 import express from 'express';
 import fs from 'fs';
