@@ -53,7 +53,7 @@ Ex: GET /suggest?q=rock
 Ex: GET /search?q=show&type=event
 ```
 
-## Métricas:
-```bash
-yarn metrics
+### Métricas:
+```
+GET /metrics/json
 ```
