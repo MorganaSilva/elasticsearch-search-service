@@ -12,12 +12,18 @@ yarn add express
 yarn dev
 ```
 
+### Setup Dashboard
+```bash
+cd dashboard
+yarn install
+yarn dev
+```
+
 ## Endpoints
 
 ### Buscar:
 ```
 GET /search?q=rock&type=event&sort=popular
-
 ```
 
 ### Click analytics:
@@ -30,13 +36,21 @@ Body: { "query_id": "abc", "doc_id": "e1", "rank": 1 }
 ### Seed Script:
 ```
 GET /documents/_count
-
 ```
 
 ### Mapping & Analyzers:
 ```
 GET /documents/_mapping?pretty
+```
 
+### Suggest:
+```
+Ex: GET /suggest?q=rock
+```
+
+### Synonyms:
+```
+Ex: GET /search?q=show&type=event
 ```
 
 ## Métricas:

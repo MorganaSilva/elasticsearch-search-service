@@ -1,0 +1,87 @@
+:root {
+  --bg-dark: #111827;
+  --bg-card: #1f2937;
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --accent: #818cf8;
+  --grid-line: #374151;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3 {
+  color: var(--text-primary);
+}
+
+/* Cards de métricas */
+.metrics-grid {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .metrics-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.metric-card {
+  background: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.metric-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.metric-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Tabela */
+.logs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.logs-table th {
+  background: var(--bg-card);
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.logs-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--grid-line);
+}
+
+.logs-table tr:nth-child(even) {
+  background: var(--bg-card);
+}
+
+/* Gráfico */
+.chart-container {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 3rem;
+}

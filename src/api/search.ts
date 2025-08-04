@@ -4,7 +4,7 @@ import { client } from '../config/elastic';
 export const searchRouter = express.Router();
 
 searchRouter.get('/', async (req, res) => {
-  // preciso garantir que os parâmetros são strings
+  //preciso garantir que os parâmetros são strings
   const q = typeof req.query.q === 'string' ? req.query.q : '';
   const type = typeof req.query.type === 'string' ? req.query.type : 'all';
   const sort = typeof req.query.sort === 'string' ? req.query.sort : 'relevance';
@@ -17,7 +17,7 @@ searchRouter.get('/', async (req, res) => {
     bool: {
       must: q ? [{
         multi_match: { 
-          query: q, // garantido ser string
+          query: q, //garantido ser string
           fields: ['title^2', 'description'], 
           fuzziness: 'AUTO' as const
         }
@@ -37,7 +37,7 @@ searchRouter.get('/', async (req, res) => {
       from: (page - 1) * size,
       size,
       query,
-      ...(sortField && { sort: sortField }) // spread condicional
+      ...(sortField && { sort: sortField }) //spread condicional
     });
 
     res.json(result.hits.hits.map(h => h._source));

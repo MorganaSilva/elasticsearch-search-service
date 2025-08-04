@@ -42,6 +42,7 @@ export async function createIndex() {
         }
       }
         */
+       
       /*
         Extras
         Autocomplete (/suggest) com edge_ngram ou completion.
@@ -82,8 +83,8 @@ export async function createIndex() {
           type: { type: 'keyword' },
           title: {
             type: 'text',
-            analyzer: 'autocomplete_analyzer', // index-time
-            search_analyzer: 'synonym_search_analyzer', // search-time
+            analyzer: 'autocomplete_analyzer',
+            search_analyzer: 'synonym_search_analyzer',
             fields: {
               keyword: { type: 'keyword' }
             }
